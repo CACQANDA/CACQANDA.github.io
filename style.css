@@ -151,3 +151,20 @@ html {
   background: #fff;
   color: #25bcff;
 }
+.test:visited {
+  color: none;
+}
+.test {
+  text-decoration: none;
+}
+/* adjust the size of the download logo */
+.download-logo {
+  width: 20px;
+  height: 20px;
+}
+
+/* adjust the size and color of the download icon */
+.fa-download {
+  font-size: 20px;
+  color: #25bcff;
+}
