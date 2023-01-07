@@ -133,6 +133,19 @@ html {
   color: #fff;
   opacity: 1;
 }
+
+/* disable hover effect on screens smaller than 800px wide */
+@media (max-width: 800px) {
+  .box ul li:hover {
+    /* override hover effect styles with "no hover effect" styles */
+    transform: scale(1);
+    z-index: initial;
+    background: initial;
+    box-shadow: initial;
+    color: initial;
+    opacity: initial;
+  }
+}
 .box ul li span {
   width: 20px;
   height: 20px;
@@ -167,4 +180,9 @@ html {
 .fa-download {
   font-size: 20px;
   color: #25bcff;
+}
+@media (max-width: 800px) {
+  a:hover {
+    /* override hover effect styles with "no hover effect" styles */
+  }
 }
